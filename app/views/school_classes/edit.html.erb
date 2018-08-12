@@ -1,0 +1,6 @@
+
+<%= form_for :school_class, url: '/school_classes' do |f| %>
+    <%= f.text_field :title, value: "#{@school_class.title}" %>
+    <%= f.number_field :room_number, value: "#{@school_class.room_number}" %>
+    <%= f.submit 'Submit', id: 'Update School class' %>
+<% end %>
