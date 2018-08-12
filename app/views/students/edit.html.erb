@@ -1,0 +1,6 @@
+
+<%= form_for :student, url: '/students' do |f| %>
+    <%= f.text_field :first_name, id: "student_first_name", value: "#{@student.first_name}" %>
+    <%= f.number_field :last_name, id: "student_last_name", value: "#{@student.last_name}" %>
+    <%= f.submit 'Submit', id: 'Update Student' %>
+<% end %>
